@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jenssy Sterling · Lectora BL</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/jenssylectora.css" />
+</head>
+<body>
+
+    <!-- ==========================================
+    NAVEGACIÓN
+    ========================================== -->
+    <header class="header" role="banner">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">✦</span>
+                <span class="logo-name">Jenssy Sterling</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="mainNav" role="navigation" aria-label="Principal">
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#lectura-actual">Mi lectura</a></li>
+                    <li><a href="javascript:void(0)" onclick="openCollapsible('manhwa-bl')">BL</a></li>
+                    <li><a href="javascript:void(0)" onclick="openCollapsible('webtoons')">Webtoons</a></li>
+                    <li><a href="javascript:void(0)" onclick="openCollapsible('lezhin')">LezhinES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==========================================
+    HERO
+    ========================================== -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-eyebrow">📖 Lectora</span>
+            <h1>Jenssy <span class="accent">Sterling</span></h1>
+            <p class="hero-description">
+                “Lo que leo, mis favoritos y recomendaciones”
+            </p>
+            <div class="hero-divider" aria-hidden="true">
+                <span></span>
+                <span>✦</span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="hero-ornaments" aria-hidden="true">
+            <span class="ornament" style="top: 10%; left: 5%;">✧</span>
+            <span class="ornament" style="top: 20%; right: 8%;">✧</span>
+            <span class="ornament" style="top: 55%; left: 3%;">✧</span>
+            <span class="ornament" style="top: 70%; right: 5%;">✧</span>
+            <span class="ornament" style="top: 40%; right: 15%;">✧</span>
+            <span class="ornament" style="bottom: 20%; left: 10%;">✧</span>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    MI LECTURA ACTUAL
+    ========================================== -->
+    <section class="section" id="lectura-actual">
+        <div class="container">
+            <h2 class="section-title">📖 Mi lectura actual</h2>
+            <p class="section-subtitle">Lo que estoy leyendo ahora mismo</p>
+
+            <div class="reading-card">
+                <div class="reading-cover">
+                    <span class="reading-emoji">✦</span>
+                </div>
+                <div class="reading-info">
+                    <h3>Nunca entiendes</h3>
+                    <div class="reading-meta">
+                        <span class="reading-tag">Manhwa</span>
+                        <span class="reading-tag">BL · Comedia</span>
+                        <span class="reading-tag">Finalizado</span>
+                    </div>
+                    <p class="reading-synopsis">
+                        <strong>Sinopsis:</strong> Kim Jaerim, un chico feo, es aceptado milagrosamente en el consejo estudiantil de su escuela, donde conoce al vicepresidente Yuri, un chico apuesto perseguido por las chicas y que odia a las personas feas. Sus personalidades no congenian para nada, provocando que estos dos no se lleven bien. Sin embargo, con el transcurso del tiempo, los sentimientos cambian y cada vez son más grandes.
+                    </p>
+                    <div class="reading-details">
+                        <span><strong>Autor:</strong> Bbong</span>
+                        <span><strong>Estado:</strong> 82 capítulos + extras</span>
+                    </div>
+                    <p class="reading-note">
+                        💬 <em>Ya es la décima vez que lo leo, pero siempre es bueno volver a leerlo.</em>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Nota de comunidad -->
+<div class="community-grid">
+    <div class="community-text">
+        <p>💬 ¿Quieres hablar de BL conmigo y otros lectores?</p>
+    </div>
+    <div class="community-cards">
+        <a href="https://chat.whatsapp.com/HopGs3hwAts1stmblHaPPR" target="_blank" rel="noopener noreferrer" class="community-card-link whatsapp-card">
+            <span class="card-icon">💚</span>
+            <div class="card-info">
+                <h4>WhatsApp</h4>
+                <p>Grupo de lectura BL</p>
+            </div>
+            <span class="card-arrow">→</span>
+        </a>
+        <a href="https://discord.gg/3evseDwzNm" target="_blank" rel="noopener noreferrer" class="community-card-link discord-card">
+            <span class="card-icon">💜</span>
+            <div class="card-info">
+                <h4>Discord</h4>
+                <p>Servidor BL</p>
+            </div>
+            <span class="card-arrow">→</span>
+        </a>
+    </div>
+    <span class="community-tag">✨ Solo para lectores de BL</span>
+</div>
+
+    <!-- ==========================================
+    BL - MANHWAS / MANHUAS / MANGAS
+    ========================================== -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">📚 Mis Listas</h2>
+            <p class="section-subtitle">Explora mis colecciones de lectura</p>
+
+            <!-- MANHWA BL - SECCIÓN COLAPSABLE (CERRADA POR DEFECTO) -->
+            <details class="collapsible-section" id="manhwa-bl">
+                <summary class="collapsible-header">
+                    <span class="collapsible-icon">📚</span>
+                    <span class="collapsible-title">BL - Manhwas / Manhuas / Mangas</span>
+                    <span class="collapsible-arrow">▼</span>
+                </summary>
+                <div class="collapsible-content">  
+
+                    <!-- Letra A -->
+                    <details class="collapsible-letter-section" open>
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">A</span>
+                            <span class="collapsible-count">8 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/1DfD43OzaXxt7x99YG8XyvLKlH_zn5USz" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Ahogado por el deseo</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1-XM7Wf2G1d8as6SO-_rMYEdlwfgofB0B" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Alone Leveling</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1NmL4kWY8y-cczRq0NqA__reihs28xUor" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Amor equilibrado</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1o0ao3vM3IrhDEevugVLI3X4qWumgTyf4" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Amor eterno</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1PVLLbjlIEQMBJK0KAtzduoVklAp3QdlZ" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Anti P.T.</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1yhJA1ZT3vyP2jiHFd2hy0ftTC3Y-eKi0" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Antídoto</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1BP8O1r9VOATXiemidJyAvwGiCEoH0zf1" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Aplicación humillante</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1E4HAtl_f0EMniQWR6GrTmhvUDCwvJDpi" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Aúlla lobo</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Letra B -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">B</span>
+                            <span class="collapsible-count">4 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/1HpeUZ6gZbuv3QYLYFD0y8YyJzf6csdR1" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Bitten Moonlight</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1SG9ksN90Yp306YKggPgpRjBkukTE_-c2" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Blind Play</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1JgGQnNfZ4_PencL7e5nhwYd2VEJqI7bp" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">BL 1 · La novia del titán</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1M0c_FyVexHVrtcZ-T1UPyEVZsLEQUt4I" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">BL Motel</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Letra C -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">C</span>
+                            <span class="collapsible-count">7 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/13wBJXFUJDaR3yHbL2Flj9j8hUaMGF0nO" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Cadena Alimenticia</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1chbv0Tdk_9zffQfAFrZfTl2quUZt--dz" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Caída Oscura</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1eeBBQVYEDwCdLUtfYv58UZ-W9zPH3xv0" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Cásate Conmigo, Alfa</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1FueSjMRli5yTo3Bsi4Y7GZQx0hodTLBa" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Castehate</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/17K9bvfEc_euN_MWR8p2cWgNusvoOEjOH" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Conquistando mi ascenso</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1ICDsPasu0iYu2p-zXD0PSY608nW_2wYO" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Corazón vampiro</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1EKrGVxAC6M-eYVBo9YT3ErKYqtGETDP2" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Cuando el asesino se enamora</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Letra D -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">D</span>
+                            <span class="collapsible-count">3 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/1hK5wZYkcOwNlfgCtrPPpLLquKsjmT6vo" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">De habitación a habitación</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/18fqKmnwZ67LuXFKhX0Op3vCDSUYjJ9Bx" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">De ventana a ventana</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1qb3cOG_ERQw4cLAMFsF67QoUz54JktE1" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Demasiado dulce</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Letra E -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">E</span>
+                            <span class="collapsible-count">6 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/1--dPwFNT7ciPougZ623iG3HHg5IWmqY3" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">El creador del Rey</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1580s8LUvM-SxMJFwCrpEAmeHHeXIFDvy" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">El diario del Secretario Kim</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1MtEiMQKUfb4xQrXXXwbae4vSIWYHgW6Q" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">El sustituto (V1)</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/11cHRpJW7JbEF8DC9_ENUaG_XF6LnWcB-" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">El sustituto (V2)</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/14EzUufdnP2W3svYdjXN3ytuj1NtfTRMy" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Embriagado</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1Ckif6x2oZhjcrUSUESAFr0qJFo5_DcYz" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Espejo negro</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Letra F -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">F</span>
+                            <span class="collapsible-count">2 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/1pMp7JlHUytd1eq6UxUYMPNRXqsGFV_wk" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Familia Instantánea</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1dj-PrqMZAaTvWcE98vp2ICoYUcBw5bfI" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Flor de papel</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Letra H -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">H</span>
+                            <span class="collapsible-count">1 título</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/19PUM84xOP2yY8bBTjSKhE4p0BKrLfSiH" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Hablando del diablo</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Letra L -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">L</span>
+                            <span class="collapsible-count">1 título</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/1DOwg1Q40fr15QCktfadIsiMC0NLVvk_V" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Lazos de sangre</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Letra M -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">M</span>
+                            <span class="collapsible-count">6 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/1DcFYUaOOEtcKWXL9mgo8JkuUs_HyQVTD" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Melodía Nocturna</span>
+                            </a>
+                            <a href="https://drive.google.com/file/d/1y8pWrNiODbNSW8dF42lNCFmK3MYBNIKm/view" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Mil otoños</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1---_ayXoQFhFhB8FeO1oPwTfnBQBiCIV" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Minmotion Syndrome</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/129hl7WQPd37iIRfmUe9W4YfaEFoiQ-p-" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Misión Encubierta</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1gc1yhz0jbIcZ5fIm7tv38o-wdU_7Yan0" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Mordiendo al tigre</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/15NmrQM6TYogKAg3WRPCpY6vP8TzTDuqo" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">My Suha</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Letra N -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">N</span>
+                            <span class="collapsible-count">1 título</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/1fOg6ygf4jyFT0b-RTuz9imNK8lLKOiUA" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">No mezcles los negocios con el placer</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Letra O -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">O</span>
+                            <span class="collapsible-count">3 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/1AAYkdLobu4pGqo76bI50N0_hHT4Bq60z" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">On or Off</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/17-NT41g-_44vIYq_TzI99Bq9H0qn1iXG" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Otra Vez</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1fraoT45suNCJq_oiFZOzWlfcPXxjOocL" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Oxígeno Letal</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Letra P -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">P</span>
+                            <span class="collapsible-count">6 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/1rUlIzqyHtGVTl9wk3in12po0crDj919P" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Pensamientos Secretos</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/17rudrkFRntj__BdTQpjvbV0b7D7WvPxG" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Pian Pian</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1CRcT_feDrJzJefglx9-xdvkk1lBkLaEZ" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Piernas que no caminan</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/170lG30kIOFnMCB6zb55EK4SBYOrsVaqn" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Polos opuestos</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1GO5MMyZuvdgrbE204fPYxE9k3thH93CZ" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Profundo</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/152G27QNIt6zCHK4VbaZY7-f4u-IKRR-0" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Punto de fusión</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Letra Q -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">Q</span>
+                            <span class="collapsible-count">1 título</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/1F2cLtMcu2s4rI6KYIPUqGwUBjktDJqd3" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">¿Quién es el que manda?</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Letra S -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">S</span>
+                            <span class="collapsible-count">7 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/1O-W6OIhC_EndbG1KveZQ0iEAnxoAWEok" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Sadistic Beauty (V1)</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1e5IJNuGG47gUOzTDuPb3CLeHzm6L-wmP" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Sadistic Beauty (V2)</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1k8L4YVPn3jvceusBTVXo4jVJlW_tZfl9" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Saye Run Freely</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1EOoYhB2EZ9VIdyT9iNMTFSrnNAiArQGa" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Señas</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1uL5aLCSjDwqYzFRa7ZPnKdFU2WAwAcoA" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Side story A</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1uy_TUzOWYTQJoY8Gvyy216sCyEg7QVHn" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Side story B</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1lWr8phdX5xNo6nc-b37ZjTIfXRxDnFGm" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Sugar Rain</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Letra U -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">U</span>
+                            <span class="collapsible-count">4 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/12eFB3N5Hh0bhF3AmMH9p_I6MUfK9GJaX" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Un amor perfectamente arruinado</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/17owlB5AgJP8ROIW6u-kaNBpstwPBINHE" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Un buen día para volverse loco</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1-P6w_PaueouwMEj-lGqfni2-P2UpQqms" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Un hombre de virtud</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1S67tXNAVEFir1VkCuJL1L_KypVmcgCPt" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Unromantic</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Letra V -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">V</span>
+                            <span class="collapsible-count">2 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://drive.google.com/drive/folders/1ACnIavNqayX8wN77al6naBlLsv8AvQjp" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Ven al café del amor</span>
+                            </a>
+                            <a href="https://drive.google.com/drive/folders/1dDC9Sfxbg6Z0auFspCZ2zTWc6DLC9cTP" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Vigilado por mi ex otra vez</span>
+                            </a>
+                        </div>
+                    </details>
+
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    WEBTOONS
+    ========================================== -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">🌐 Webtoons</h2>
+            <p class="section-subtitle">Mis webtoons favoritos</p>
+
+            <!-- WEBTOONS - SECCIÓN COLAPSABLE (CERRADA POR DEFECTO) -->
+            <details class="collapsible-section" id="webtoons">
+                <summary class="collapsible-header">
+                    <span class="collapsible-icon">🌐</span>
+                    <span class="collapsible-title">Webtoons</span>
+                    <span class="collapsible-arrow">▼</span>
+                </summary>
+                <div class="collapsible-content">
+
+                    <!-- Webtoons - Letra A -->
+                    <details class="collapsible-letter-section" open>
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">A</span>
+                            <span class="collapsible-count">4 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.webtoons.com/es/romance/-/list?title_no=4254" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">¡Juro que te amo!</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/romance/amor-o-sexo/list?title_no=4158" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Amor o Sexo?</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/romance/before-we-knew-it/list?title_no=2766" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Amor entre líneas</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/romance/the-kiss-bet/list?title_no=1986" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Apuesta de amor</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Webtoons - Letra B -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">B</span>
+                            <span class="collapsible-count">1 título</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.webtoons.com/es/drama/beauty-in-a-click/list?title_no=4172" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Belleza en un clic</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Webtoons - Letra C -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">C</span>
+                            <span class="collapsible-count">4 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.webtoons.com/es/drama/marry-my-husband/list?title_no=4509" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Cásate con mi esposo</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/thriller/shotgun-boy/list?title_no=2636" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Chico Escopeta</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/slice-of-life/as-per-usual/list?title_no=2343" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">COMO SIEMPRE</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/romance/lore-olympus/list?title_no=1725" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Cuentos del Olimpo</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Webtoons - Letra D -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">D</span>
+                            <span class="collapsible-count">1 título</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.webtoons.com/es/romance/your-smile-is-a-trap/list?title_no=2100" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Detrás de tu sonrisa</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Webtoons - Letra E -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">E</span>
+                            <span class="collapsible-count">4 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.webtoons.com/es/action/el-brayan/list?title_no=5072" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">El Brayan</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/thriller/the-guy-upstairs/list?title_no=4920" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">El chico de arriba</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/romance/iseops-romance/list?title_no=6109" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">El romance de Iseop</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/romance/brass-and-sass/list?title_no=1785" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">En clave de amor</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Webtoons - Letra L -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">L</span>
+                            <span class="collapsible-count">1 título</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.webtoons.com/es/supernatural/ghost-wife/list?title_no=2289" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Esposa Fantasma</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Webtoons - Letra M -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">M</span>
+                            <span class="collapsible-count">3 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.webtoons.com/es/romance/the-mafia-nanny/list?title_no=6338" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">La niñera de la mafia</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/comedy/adventures-of-god/list?title_no=1729" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Las aventuras de Dios</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/fantasy/men-of-the-harem/list?title_no=2550" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Los hombres de mi harén</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Webtoons - Letra N -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">N</span>
+                            <span class="collapsible-count">2 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.webtoons.com/es/drama/i-love-yoo/list?title_no=1923" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Nadie como Yoo</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/drama/nuestra-voz/list?title_no=3844" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Nuestra Voz</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Webtoons - Letra O -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">O</span>
+                            <span class="collapsible-count">2 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.webtoons.com/es/fantasy/osora/list?title_no=6788" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Osora</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/sf/eggnoid/list?title_no=2653" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Ovoide</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Webtoons - Letra P -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">P</span>
+                            <span class="collapsible-count">2 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.webtoons.com/es/drama/mom-im-sorry/list?title_no=2449" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Perdón, mamá</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/romance/midnight-poppy-land/list?title_no=2131" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Poppy a la medianoche</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Webtoons - Letra R -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">R</span>
+                            <span class="collapsible-count">2 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.webtoons.com/es/romance/raices-del-corazon/list?title_no=4390" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Raíces del Corazón</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/drama/see-you-in-my-19th-life/list?title_no=2379" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Resurrección</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Webtoons - Letra S -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">S</span>
+                            <span class="collapsible-count">3 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.webtoons.com/es/thriller/surviving-the-apocalypse/list?title_no=6967" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Sobreviviendo al apocalipsis</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/romance/subzero/list?title_no=1879" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Subzero</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/romance/seasons-of-blossom/list?title_no=2869" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Temporada de flores</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Webtoons - Letra T -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">T</span>
+                            <span class="collapsible-count">4 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.webtoons.com/es/horror/everything-is-fine/list?title_no=3418" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Todo está bien</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/fantasy/tower-of-god/list?title_no=1718" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Tower of God</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/horror/homesick/list?title_no=3241" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Trastorno</span>
+                            </a>
+                            <a href="https://www.webtoons.com/es/fantasy/your-throne/list?title_no=2414" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Tu trono</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Webtoons - Letra U -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">U</span>
+                            <span class="collapsible-count">1 título</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.webtoons.com/es/romance/selfish-romance/list?title_no=6966" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Un romance egoísta</span>
+                            </a>
+                        </div>
+                    </details>
+
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    LEZHIN ES
+    ========================================== -->
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">📖 LezhinES</h2>
+            <p class="section-subtitle">Mis lecturas de Lezhin España</p>
+
+            <!-- LEZHIN ES - SECCIÓN COLAPSABLE (CERRADA POR DEFECTO) -->
+            <details class="collapsible-section" id="lezhin">
+                <summary class="collapsible-header">
+                    <span class="collapsible-icon">📖</span>
+                    <span class="collapsible-title">LezhinES</span>
+                    <span class="collapsible-arrow">▼</span>
+                </summary>
+                <div class="collapsible-content">
+
+                    <!-- Lezhin - Letra A -->
+                    <details class="collapsible-letter-section" open>
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">A</span>
+                            <span class="collapsible-count">5 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.lezhin.es/detail/amor-duro" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Amor duro</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/angel-buddy" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Angel Buddy</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/anti-romantico" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Anti-romántico</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/aporia" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">APORÍA</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/aventura-de-una-mala-noche" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Aventura de una mala noche</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Lezhin - Letra C -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">C</span>
+                            <span class="collapsible-count">4 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.lezhin.es/detail/cazando-fantasmas" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Cazando fantasmas</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/crazy-about" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Crazy About</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/cuidado-con-los-idus-de-marzo" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Cuidado con los idus de Marzo</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Lezhin - Letra E -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">E</span>
+                            <span class="collapsible-count">4 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.lezhin.es/detail/el-destino-no-se-equivoca" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">El destino no se equivoca</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/el-nuero-del-senor-kang" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">El nuero del señor Kang</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/el-portal-del-sexto-sentido" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">El portal del sexto sentido</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/el-triangulo-torcido" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">El triángulo torcido</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/en-la-frontera-entre-el-amor-y-el-odio" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">En la frontera entre el amor y el odio</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/esclavo-de-la-corona" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Esclavo de la corona</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Lezhin - Letra K -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">K</span>
+                            <span class="collapsible-count">1 título</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.lezhin.es/detail/killer-crush" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Killer Crush</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Lezhin - Letra L -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">L</span>
+                            <span class="collapsible-count">3 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.lezhin.es/detail/la-tentacion-del-diablo" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">La tentación del diablo</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/la-vida-secreta-del-rey-demonio" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">La vida secreta del rey demonio</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/liveta" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Liveta</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Lezhin - Letra M -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">M</span>
+                            <span class="collapsible-count">2 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.lezhin.es/detail/manual-de-coqueteo-en-el-trabajo" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Manual de coqueteo en el trabajo</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/marcel" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Marcel</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Lezhin - Letra O -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">O</span>
+                            <span class="collapsible-count">1 título</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.lezhin.es/detail/orbita-de-amor" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Órbita de amor</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Lezhin - Letra P -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">P</span>
+                            <span class="collapsible-count">3 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.lezhin.es/detail/prohibido-enamorarse" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Prohibido enamorarse</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/punk-dunk-funk" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Punk Dunk Punk</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Lezhin - Letra Q -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">Q</span>
+                            <span class="collapsible-count">1 título</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.lezhin.es/detail/quedate-conmigo" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Quédate conmigo</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Lezhin - Letra R -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">R</span>
+                            <span class="collapsible-count">1 título</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.lezhin.es/detail/runway-hit" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Runway Hit</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Lezhin - Letra S -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">S</span>
+                            <span class="collapsible-count">2 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.lezhin.es/detail/sex-toy" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Sex toy: entrenando al novato pechugón</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Lezhin - Letra T -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">T</span>
+                            <span class="collapsible-count">2 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.lezhin.es/detail/te-espero" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Te espero</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Lezhin - Letra U -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">U</span>
+                            <span class="collapsible-count">2 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.lezhin.es/detail/un-hombre-digno" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">Un hombre digno</span>
+                            </a>
+                        </div>
+                    </details>
+
+                    <!-- Lezhin - Letra ¡ / A (símbolos) -->
+                    <details class="collapsible-letter-section">
+                        <summary class="collapsible-letter-header">
+                            <span class="bl-letter">¡</span>
+                            <span class="collapsible-count">3 títulos</span>
+                            <span class="collapsible-arrow">▼</span>
+                        </summary>
+                        <div class="bl-list">
+                            <a href="https://www.lezhin.es/detail/a-la-mi-con-todo" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">¡A la Mi*** con todo!</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/apaga-la-camara" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">¡Apaga la cámara!</span>
+                            </a>
+                            <a href="https://www.lezhin.es/detail/app-deseo-intimo" class="bl-item" target="_blank">
+                                <span class="bl-icon">✦</span>
+                                <span class="bl-title">APP❤️DESEO ÍNTIMO</span>
+                            </a>
+                        </div>
+                    </details>
+
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <!-- ==========================================
+    FOOTER
+    ========================================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="footer-mark">✦</span>
+                <span class="footer-name">Jenssy Sterling</span>
+            </div>
+            <p class="footer-tagline">
+                “Escritora de historias nacidas de escenas, frases y emociones”
+            </p>
+
+            <!-- Redes Sociales -->
+            <div class="footer-section">
+                <span class="footer-label">Mis Redes Sociales</span>
+                <div class="footer-links">
+                    <a href="https://www.instagram.com/jenssysterling/" target="_blank">Instagram</a>
+                    <a href="https://www.tiktok.com/@jenssysterling" target="_blank">TikTok</a>
+                    <a href="https://www.youtube.com/@jenssysterling" target="_blank">YouTube</a>
+                </div>
+            </div>
+
+            <!-- Comunidad BL -->
+            <div class="footer-section">
+                <span class="footer-label">Comunidad BL</span>
+                <div class="footer-links">
+                    <a href="https://chat.whatsapp.com/HopGs3hwAts1stmblHaPPR" target="_blank" class="footer-highlight">🟢 WhatsApp</a>
+                    <a href="https://discord.gg/3evseDwzNm" target="_blank" class="footer-highlight">🟣 Discord</a>
+                </div>
+                <span class="footer-note">✨ Solo para lectores de BL</span>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; 2026 JenssySterling</span>
+                <span class="footer-divider">·</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+    SCRIPTS
+    ========================================== -->
+    <script src="js/script.js"></script>
+</body>
+</html>
