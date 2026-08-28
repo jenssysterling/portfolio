@@ -1,0 +1,783 @@
+/* ==========================================
+   JENSSY STERLING · STYLE
+   Diseño para página principal
+   ========================================== */
+
+/* ---------- RESET ---------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #faf8f9;
+    color: #1a1a1a;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+/* ---------- VARIABLES ---------- */
+:root {
+    --primary: #e85d8a;
+    --primary-dark: #c94a74;
+    --primary-light: #f5d4df;
+    --secondary: #b8a0d4;
+    --text: #1a1a1a;
+    --text-light: #555;
+    --text-muted: #888;
+    --bg: #faf8f9;
+    --bg-card: #ffffff;
+    --border: #eee;
+    --shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    --shadow-hover: 0 16px 48px rgba(0, 0, 0, 0.10);
+    --radius: 20px;
+    --radius-sm: 12px;
+    --transition: all 0.25s ease;
+}
+
+/* ---------- TIPOGRAFÍA ---------- */
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    color: var(--text-light);
+}
+
+/* ---------- CONTENEDOR ---------- */
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* ==========================================
+   SCROLLBAR PERSONALIZADA
+   ========================================== */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+/* ==========================================
+   HEADER / NAVEGACIÓN
+   ========================================== */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+.logo-mark {
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.logo-name {
+    letter-spacing: -0.02em;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4.5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.menu-toggle span {
+    width: 26px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(4.5px, 4.5px);
+}
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(4.5px, -4.5px);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.nav-list a {
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-light);
+    transition: var(--transition);
+}
+
+.nav-list a:hover {
+    color: var(--text);
+    background: var(--bg);
+}
+
+.nav-list .nav-cta {
+    background: var(--primary);
+    color: #fff;
+    padding: 0.4rem 1.2rem;
+}
+
+.nav-list .nav-cta:hover {
+    background: var(--primary-dark);
+    color: #fff;
+}
+
+/* ==========================================
+   HERO - PÁGINA PRINCIPAL
+   ========================================== */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 1.5rem;
+    position: relative;
+    background: linear-gradient(170deg, #fcf6f8 0%, #f5edf0 100%);
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 640px;
+}
+
+.hero-eyebrow {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--primary);
+    background: var(--primary-light);
+    padding: 0.2rem 1rem;
+    border-radius: 50px;
+    margin-bottom: 0.75rem;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.25rem;
+}
+
+.hero h1 .accent {
+    color: var(--primary);
+}
+
+.hero-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1.5rem auto;
+    width: 120px;
+}
+
+.hero-divider span {
+    display: block;
+    height: 1px;
+    background: var(--border);
+    flex: 1;
+}
+
+.hero-divider span:first-child,
+.hero-divider span:last-child {
+    flex: 2;
+}
+
+.hero-divider span:nth-child(2) {
+    flex: 0;
+    color: var(--primary);
+    font-size: 0.7rem;
+    background: none;
+    height: auto;
+}
+
+.hero-question {
+    font-size: 1.15rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+/* ==========================================
+   TARJETAS DEL HERO - COLORES SUAVES
+   ========================================== */
+.hero-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--bg-card);
+    padding: 2rem 1.8rem;
+    border-radius: var(--radius);
+    width: 220px;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+    border-color: transparent;
+}
+
+/* Personal - Gris suave */
+.card-personal:hover {
+    border-color: #fbbf24;
+    background: #fffbeb;
+}
+
+/* Escritora - Rosa */
+.card-writer:hover {
+    border-color: var(--primary);
+    background: #fff8fa;
+}
+
+/* Lectora - Morado */
+.card-reader:hover {
+    border-color: var(--secondary);
+    background: #f8f5ff;
+}
+
+/* Enlaces - Gris más claro */
+.card-links:hover {
+    border-color: #c0c0c0;
+    background: #f7f7f7;
+}
+
+.card-icon {
+    font-size: 2.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+}
+
+.card-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+.card-arrow {
+    margin-top: 0.6rem;
+    font-size: 1rem;
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.card:hover .card-arrow {
+    transform: translateX(4px);
+}
+
+.card-writer:hover .card-arrow {
+    color: var(--primary);
+}
+
+.card-reader:hover .card-arrow {
+    color: var(--secondary);
+}
+
+.card-personal:hover .card-arrow {
+    color: #777;
+}
+
+.card-links:hover .card-arrow {
+    color: #888;
+}
+
+/* ==========================================
+   ORNAMENTOS DEL HERO
+   ========================================== */
+.hero-ornaments {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.ornament {
+    position: absolute;
+    font-size: 1.4rem;
+    color: var(--primary);
+    opacity: 0.12;
+    animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-16px) rotate(4deg); }
+}
+
+/* ==========================================
+   LÍNEA SEPARADORA
+   ========================================== */
+.section-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border), transparent);
+    max-width: 120px;
+    margin: 0 auto;
+    opacity: 0.4;
+}
+
+.section-divider-icon {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border) 25%, var(--border) 75%, transparent);
+    max-width: 140px;
+    margin: 0 auto;
+    opacity: 0.3;
+    position: relative;
+}
+
+.section-divider-icon::after {
+    content: '✦';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-card);
+    padding: 0 0.6rem;
+    color: var(--primary);
+    font-size: 0.6rem;
+    opacity: 0.5;
+}
+
+/* ==========================================
+   SOCIAL
+   ========================================== */
+.social {
+    padding: 4rem 1.5rem;
+    background: var(--bg-card);
+}
+
+.social-inner {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-title {
+    font-size: 1.8rem;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+}
+
+.social-subtitle {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+    background: var(--bg);
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+    transition: var(--transition);
+    gap: 0.15rem;
+}
+
+.social-link:hover {
+    background: var(--bg-card);
+    border-color: var(--primary-light);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+.social-icon {
+    font-size: 1.5rem;
+}
+
+.social-name {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.social-link:hover .social-name {
+    color: var(--text);
+}
+
+.social-highlight {
+    background: #e8f5e9;
+    border-color: #a5d6a7;
+}
+
+.social-highlight .social-name {
+    color: #2e7d32;
+}
+
+.social-highlight:hover {
+    background: #c8e6c9;
+    border-color: #66bb6a;
+}
+
+.social-note {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    background: var(--bg);
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+.footer {
+    background: #1a1a1a;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 2.5rem 1.5rem 2rem;
+    text-align: center;
+}
+
+.footer-inner {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    margin-bottom: 0.2rem;
+}
+
+.footer-mark {
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.footer-name {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.footer-tagline {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+    margin-bottom: 1.2rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.footer-links a {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0.2rem 0.8rem;
+    border-radius: 50px;
+    transition: var(--transition);
+}
+
+.footer-links a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.footer-highlight {
+    color: #81c784 !important;
+}
+
+.footer-highlight:hover {
+    color: #a5d6a7 !important;
+    background: rgba(129, 199, 132, 0.12) !important;
+}
+
+.footer-bottom {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 820px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-cards {
+        gap: 1rem;
+    }
+
+    .card {
+        width: 200px;
+        padding: 1.5rem 1.2rem;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .section-divider,
+    .section-divider-icon {
+        max-width: 80px;
+    }
+
+    .section-divider-icon::after {
+        font-size: 0.5rem;
+        padding: 0 0.3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--bg-card);
+        border-bottom: 1px solid var(--border);
+        padding: 1rem 1.5rem;
+        display: none;
+        box-shadow: var(--shadow);
+    }
+
+    .nav.is-open {
+        display: block;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.25rem;
+    }
+
+    .nav-list a {
+        text-align: center;
+        padding: 0.6rem;
+        border-radius: var(--radius-sm);
+    }
+
+    .nav-list .nav-cta {
+        margin-top: 0.25rem;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        padding: 1.5rem;
+    }
+
+    .card-icon {
+        font-size: 2.4rem;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+
+    .social-link {
+        padding: 0.8rem 0.4rem;
+    }
+
+    .social-icon {
+        font-size: 1.3rem;
+    }
+
+    .social-note {
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .footer-links {
+        gap: 0.3rem;
+    }
+
+    .footer-links a {
+        font-size: 0.75rem;
+        padding: 0.15rem 0.6rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.7rem;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    .section-divider,
+    .section-divider-icon {
+        max-width: 60px;
+    }
+
+    .section-divider-icon::after {
+        font-size: 0.4rem;
+        padding: 0 0.2rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        max-width: 260px;
+        padding: 1.2rem;
+    }
+
+    .card-icon {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-desc {
+        font-size: 0.8rem;
+    }
+}

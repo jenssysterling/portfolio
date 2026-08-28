@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="4" fill="#0D0A0C"/>
+  <!-- JS minimal -->
+  <text x="16" y="20" font-family="Georgia, serif" font-size="14" fill="#F899C0" text-anchor="middle" font-weight="300">JS</text>
+  <!-- Línea -->
+  <rect x="10" y="24" width="12" height="1" fill="#C9954A"/>
+  <!-- Estrella -->
+  <text x="16" y="8" font-size="7" fill="#C9954A" text-anchor="middle">✦</text>
+</svg>
