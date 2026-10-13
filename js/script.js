@@ -509,3 +509,9 @@ console.log('💬 Comunidad en WhatsApp y Discord');
 console.log('⌨️ Atajos de teclado: Ctrl+1=BL, Ctrl+2=Webtoons, Ctrl+3=Lectura, Escape=Cerrar todo');
 console.log('🎨 Tema guardado en localStorage');
 console.log('💾 Estado de collapsibles guardado en localStorage');
+
+// ==========================================
+// ACTUALIZACIÓN AÑO EN EL FOOTER
+// ==========================================
+
+document.getElementById("year").textContent = new Date().getFullYear();
